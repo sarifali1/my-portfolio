@@ -1,52 +1,67 @@
-# 🚀 MERN Portfolio Website
+# MERN Portfolio Website 🌐
 
-A full-stack **MERN (MongoDB, Express, React, Node.js)** personal portfolio website with **Admin Dashboard**, **Authentication**, and **Contact Management**.
-
-This project is built to showcase real-world full-stack development skills.
-
----
-
-## 🌐 Live Demo
-> 🔗 Coming Soon (Deployment in progress)
+A full-stack **MERN (MongoDB, Express, React, Node.js)** portfolio website with an **Admin Dashboard**, **JWT Authentication**, and **Contact Management System**.  
+The project is fully deployed with real production URLs.
 
 ---
 
-## 🛠️ Tech Stack
+## 🔗 Live Demo
 
-### Frontend
-- React (Vite)
-- Tailwind CSS
-- React Router
-- Axios
-
-### Backend
-- Node.js
-- Express.js
-- MongoDB (Mongoose)
-- JWT Authentication
-
-### Tools & Services
-- MongoDB Atlas
-- Git & GitHub
-- Render (Backend Deployment)
-- Netlify / Vercel (Frontend Deployment)
+- **Frontend (Netlify):** [https://your-frontend-url.netlify.app](https://sarifali.netlify.app/)  
+- **Backend API (Render):** https://portfolio-backend-jotx.onrender.com  
+- **GitHub Repository:** https://github.com/sarifali1/my-portfolio  
 
 ---
 
 ## ✨ Features
 
-### 👤 Public Website
-- Responsive modern UI
-- Dark mode support
-- Projects, Skills, Education sections
-- Contact form
+### 🌍 Frontend
+- Modern responsive portfolio UI
+- Dark / Light mode
+- Projects, Skills, Education, Contact sections
+- Admin Login page
+- Protected Admin Dashboard
+- Axios API integration
 
-### 🔐 Admin Panel
-- Secure admin login (JWT)
-- View contact messages
-- Reply via email
-- Delete messages
+### 🔐 Authentication
+- Admin login using **JWT**
 - Protected routes
+- Secure token-based access
+
+### 📩 Contact System
+- Contact form for visitors
+- Messages stored in MongoDB
+- Admin can view & delete messages
+
+### 🛠 Backend
+- RESTful API with Express
+- MongoDB Atlas database
+- JWT-based authentication
+- Centralized error handling
+- Secure environment variables
+
+---
+
+## 🧑‍💻 Tech Stack
+
+**Frontend**
+- React (Vite)
+- Tailwind CSS
+- Axios
+- React Router
+
+**Backend**
+- Node.js
+- Express.js
+- MongoDB (Atlas)
+- Mongoose
+- JWT
+- bcryptjs
+
+**Deployment**
+- Frontend → Netlify
+- Backend → Render
+- Database → MongoDB Atlas
 
 ---
 
@@ -55,14 +70,19 @@ This project is built to showcase real-world full-stack development skills.
 mern-portfolio/
 │
 ├── frontend/ # React frontend
+│ ├── src/
+│ ├── public/
+│ └── package.json
 │
-├── backend/ # Express backend API
+├── backend/ # Express backend
+│ ├── controllers/
+│ ├── routes/
+│ ├── models/
+│ ├── middleware/
+│ ├── server.js
+│ └── package.json
 │
-├── .gitignore
-└── README.md
-
-yaml
-Copy code
+└── .gitignore
 
 ---
 
@@ -70,47 +90,49 @@ Copy code
 
 Create a `.env` file inside the **backend** folder:
 
-```env
 PORT=5000
-MONGODB_URI=your_mongodb_connection_string
+MONGODB_URI=your_mongodb_atlas_connection_string
 JWT_SECRET=your_secret_key
-NODE_ENV=development
-▶️ Run Locally
-1️⃣ Clone the repository
-bash
-Copy code
-git clone https://github.com/your-username/my-portfolio.git
-cd mern-portfolio
-2️⃣ Backend setup
+NODE_ENV=production
+
+> ⚠️ Never push `.env` files to GitHub.
+
+---
+
+## 🚀 Run Locally
+
+### 1️⃣ Clone Repository
+```bash
+git clone https://github.com/sarifali1/my-portfolio.git
+cd my-portfolio
+2️⃣ Backend Setup
 bash
 Copy code
 cd backend
 npm install
 npm run dev
-3️⃣ Frontend setup
+3️⃣ Frontend Setup
 bash
 Copy code
 cd frontend
 npm install
 npm run dev
-🎯 Purpose
-This project is built to:
+🧪 Admin Access
+Admin authentication is protected using JWT
 
-Demonstrate real-world MERN stack skills
+Admin can view and manage contact messages
 
-Showcase authentication & admin dashboard
+Admin creation route is disabled in production for security
 
-Be used as a portfolio project for interviews
-
-📸 Screenshots
-Will be added after deployment
+📌 Status
+✅ Fully functional
+✅ Deployed to production
+✅ Real-world MERN stack project
 
 👨‍💻 Author
 MD Sarif Ali
 
 GitHub: https://github.com/sarifali1
 
-⭐ If you like this project, give it a star!
-
-yaml
-Copy code
+📄 License
+This project is for learning and portfolio purposes.
