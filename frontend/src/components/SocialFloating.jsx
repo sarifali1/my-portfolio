@@ -11,7 +11,7 @@ export default function SocialFloating() {
     {
       name: 'GitHub',
       icon: <FaGithub />,
-      url: 'https://github.com/yourusername',
+      url: 'https://github.com/sarifali1',
       color: 'hover:bg-gray-800'
     },
     {
@@ -23,7 +23,7 @@ export default function SocialFloating() {
     {
       name: 'Email',
       icon: <FaEnvelope />,
-      url: 'mailto:your.email@example.com',
+      url: 'mailto:msa2441139@gmail.com',
       color: 'hover:bg-red-600'
     }
   ];
