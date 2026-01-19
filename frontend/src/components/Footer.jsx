@@ -13,9 +13,9 @@ export default function Footer() {
 
   const socials = [
     { icon: <FaLinkedin />, url: 'https://linkedin.com/in/yourusername', color: 'hover:text-blue-600' },
-    { icon: <FaGithub />, url: 'https://github.com/yourusername', color: 'hover:text-gray-600' },
+    { icon: <FaGithub />, url: 'https://github.com/sarifali1', color: 'hover:text-gray-600' },
     { icon: <FaTwitter />, url: 'https://twitter.com/yourusername', color: 'hover:text-sky-500' },
-    { icon: <FaEnvelope />, url: 'mailto:your.email@example.com', color: 'hover:text-red-600' }
+    { icon: <FaEnvelope />, url: 'mailto:msa2441139@gmail.com', color: 'hover:text-red-600' }
   ];
 
   return (
